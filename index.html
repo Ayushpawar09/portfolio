@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Pawar | Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">AP<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#charts">Analytics</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon moon-icon"></i>
+                    <i class="fas fa-sun sun-icon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">👋 Hello, I'm</p>
+                <h1 class="hero-name">Ayush <span class="gradient-text">Pawar</span></h1>
+                <h2 class="hero-title">
+                    <span class="typing-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Transforming raw data into actionable business insights. 
+                    Specialized in SQL, Python, Power BI, and building 
+                    end-to-end analytics solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Ayushpawar09" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/ayush-pawar-09aug" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:pawarayush498@gmail.com">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <div class="profile-glow"></div>
+                    <div class="profile-content">
+                        <div class="profile-avatar">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <h3 data-count="2.3">$0M</h3>
+                                <p>Revenue Analyzed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 data-count="152">0K+</h3>
+                                <p>Records Processed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 data-count="3">0+</h3>
+                                <p>Major Projects</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 data-count="16">0+</h3>
+                                <p>DAX Measures</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Get to know me</p>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Data Analyst & B.Tech CS Graduate</h3>
+                    <p>
+                        I'm a passionate Data Analyst with hands-on experience in transforming complex datasets 
+                        into meaningful business insights. With expertise in SQL, Python, Power BI, and PostgreSQL, 
+                        I specialize in building end-to-end analytics solutions.
+                    </p>
+                    <p>
+                        My strength lies in querying databases, cleaning and transforming data, building KPI 
+                        dashboards, and solving business problems through structured, data-driven approaches.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pune, India</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.Tech CSE | CGPA 7.8</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 8103798011</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Open to Opportunities</span>
+                        </div>
+                    </div>
+                    <!-- UPDATED: Download & View Resume Buttons -->
+                    <div class="resume-buttons">
+                        <button onclick="downloadResume()" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </button>
+                        <button onclick="viewResume()" class="btn btn-secondary">
+                            <i class="fas fa-eye"></i> View Resume
+                        </button>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="file-name">about_me.py</span>
+                        </div>
+                        <pre class="code-content"><span class="comment"># Data Analyst Profile</span>
+<span class="keyword">class</span> <span class="class-name">AyushPawar</span>:
+    <span class="keyword">def</span> <span class="func">__init__</span>(self):
+        self.role = <span class="string">"Data Analyst"</span>
+        self.skills = [
+            <span class="string">"SQL"</span>, <span class="string">"Python"</span>, 
+            <span class="string">"Power BI"</span>, <span class="string">"DAX"</span>,
+            <span class="string">"PostgreSQL"</span>, <span class="string">"Excel"</span>
+        ]
+        self.passion = <span class="string">"Data-Driven Insights"</span>
+        
+    <span class="keyword">def</span> <span class="func">deliver_value</span>(self):
+        <span class="keyword">return</span> <span class="string">"Business Impact 🚀"</span></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">My Expertise</p>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <!-- 1. Data Analysis -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Data Analysis</h3>
+                    <div class="skill-tags">
+                        <span>Data Cleaning</span>
+                        <span>Data Transformation</span>
+                        <span>EDA</span>
+                        <span>KPI Tracking</span>
+                        <span>Feature Engineering</span>
+                        <span>Data Validation</span>
+                    </div>
+                </div>
+
+                <!-- 2. Visualization & BI -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Visualization & BI</h3>
+                    <div class="skill-tags">
+                        <span>Power BI</span>
+                        <span>Excel</span>
+                        <span>DAX</span>
+                        <span>Dashboard Development</span>
+                        <span>Reporting</span>
+                    </div>
+                </div>
+
+                <!-- 3. Concepts -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Concepts</h3>
+                    <div class="skill-tags">
+                        <span>ETL</span>
+                        <span>Data Modeling</span>
+                        <span>Data Warehousing</span>
+                        <span>Cohort Analysis</span>
+                        <span>API Data Extraction</span>
+                        <span>Business Intelligence</span>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
+
+                <!-- 4. Databases -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <!-- 5. Languages -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <!-- 6. Libraries -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-book"></i></div>
+                    <h3>Libraries</h3>
+                    <div class="skill-tags">
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">My Work</p>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-badge">⭐ Featured</div>
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Customer Retention & Revenue Leakage Analysis</h3>
+                    <p>
+                        End-to-end SaaS analytics solution identifying <strong>$2.3M annual revenue leakage</strong> 
+                        from churn, failed payments, and plan downgrades.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check"></i> 8-table PostgreSQL DB with 152,000+ records</li>
+                        <li><i class="fas fa-check"></i> 20 advanced SQL queries (CTEs, window functions)</li>
+                        <li><i class="fas fa-check"></i> 5-page Power BI dashboard with 16+ DAX measures</li>
+                        <li><i class="fas fa-check"></i> $680K recovery opportunity identified</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>SQL</span>
+                        <span>Power BI</span>
+                        <span>Python</span>
+                        <span>PostgreSQL</span>
+                        <span>DAX</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Ayushpawar09/saas-customer-retention-analysis" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fab fa-spotify"></i>
+                    </div>
+                    <h3>Spotify Music Analytics Dashboard</h3>
+                    <p>
+                        Analyzed <strong>8,500+ Spotify tracks</strong> to identify trends in popularity, 
+                        genre performance, and artist growth across decades.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check"></i> Interactive filters for artist & genre</li>
+                        <li><i class="fas fa-check"></i> Real-time analysis capabilities</li>
+                        <li><i class="fas fa-check"></i> Custom DAX measures for KPIs</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>Excel</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>HR Analytics Dashboard</h3>
+                    <p>
+                        Built comprehensive HR dashboard analyzing <strong>1,400+ employee records</strong> 
+                        for attrition, demographics, and salary distribution insights.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check"></i> Attrition analysis & workforce segmentation</li>
+                        <li><i class="fas fa-check"></i> Salary trend reporting</li>
+                        <li><i class="fas fa-check"></i> Employee retention insights</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>Excel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Charts Section -->
+    <section id="charts" class="charts-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Data Visualization</p>
+                <h2 class="section-title">Live <span class="gradient-text">Analytics</span></h2>
+                <p class="contact-intro">Interactive showcases of my data analytics capabilities</p>
+            </div>
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3><i class="fas fa-chart-line"></i> Skill Proficiency</h3>
+                        <span class="chart-badge">Live Data</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3><i class="fas fa-chart-pie"></i> Project Distribution</h3>
+                        <span class="chart-badge">2025</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="projectsChart"></canvas>
+                    </div>
+                </div>
+                <!-- UPDATED: Beautiful Impact Cards instead of broken bar chart -->
+                <div class="chart-card full-width">
+                    <div class="chart-header">
+                        <h3><i class="fas fa-chart-bar"></i> Project Impact Metrics</h3>
+                        <span class="chart-badge">Business Value</span>
+                    </div>
+                    <div class="impact-metrics-grid">
+                        <div class="impact-card">
+                            <div class="impact-icon"><i class="fas fa-database"></i></div>
+                            <h4><span data-target="152" data-suffix="K+">0</span></h4>
+                            <p>Records Analyzed</p>
+                            <div class="impact-bar"><div class="impact-fill" style="--width: 95%"></div></div>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-icon"><i class="fas fa-dollar-sign"></i></div>
+                            <h4>$<span data-target="2.3" data-decimal="1">0</span>M</h4>
+                            <p>Revenue Identified</p>
+                            <div class="impact-bar"><div class="impact-fill" style="--width: 100%"></div></div>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-icon"><i class="fas fa-calculator"></i></div>
+                            <h4><span data-target="16" data-suffix="+">0</span></h4>
+                            <p>DAX Measures</p>
+                            <div class="impact-bar"><div class="impact-fill" style="--width: 80%"></div></div>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-icon"><i class="fas fa-code"></i></div>
+                            <h4><span data-target="20" data-suffix="+">0</span></h4>
+                            <p>SQL Queries</p>
+                            <div class="impact-bar"><div class="impact-fill" style="--width: 85%"></div></div>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-icon"><i class="fas fa-chart-line"></i></div>
+                            <h4><span data-target="5" data-suffix="">0</span></h4>
+                            <p>Dashboards Built</p>
+                            <div class="impact-bar"><div class="impact-fill" style="--width: 75%"></div></div>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-icon"><i class="fas fa-trophy"></i></div>
+                            <h4>$<span data-target="680" data-suffix="K">0</span></h4>
+                            <p>Recovery Identified</p>
+                            <div class="impact-bar"><div class="impact-fill" style="--width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">My Journey</p>
+                <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2025 - Sept 2025</span>
+                        <h3>Data Analyst Intern</h3>
+                        <h4>Prodigy InfoTech</h4>
+                        <ul>
+                            <li>Data cleaning, transformation using Excel, SQL, and Python</li>
+                            <li>Prepared datasets for dashboard creation and reporting</li>
+                            <li>Identified trends and supported decision-making</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jul 2025 - Aug 2025</span>
+                        <h3>Data Analyst (Virtual)</h3>
+                        <h4>Deloitte (Forage)</h4>
+                        <ul>
+                            <li>Completed data analysis and forensic technology tasks</li>
+                            <li>Built dashboards interpreting machine downtime trends</li>
+                            <li>Strengthened visualization and reporting skills</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2026</span>
+                        <h3>B.Tech in Computer Science Engineering</h3>
+                        <h4>SAGE University, Indore</h4>
+                        <p>CGPA: <strong>7.8</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">What People Say</p>
+                <h2 class="section-title">Client <span class="gradient-text">Testimonials</span></h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">
+                        "Ayush demonstrated exceptional analytical skills during his internship. His ability to transform 
+                        complex datasets into actionable insights using Power BI and SQL was impressive. A great team player 
+                        with strong technical abilities."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Project Mentor</h4>
+                            <p>Prodigy InfoTech</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">
+                        "Working with Ayush on the SaaS analytics project was outstanding. He identified $2.3M in revenue 
+                        leakage and provided actionable recommendations. His SQL expertise and dashboard development skills 
+                        are truly remarkable."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Team Lead</h4>
+                            <p>Deloitte (Forage)</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">
+                        "Ayush's dedication to data analytics is commendable. He built an HR analytics dashboard with 
+                        1,400+ records that provided clear insights into employee attrition patterns. Highly recommended 
+                        for any data-driven role."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Faculty Mentor</h4>
+                            <p>SAGE University</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot-indicator active" data-index="0"></span>
+                <span class="dot-indicator" data-index="1"></span>
+                <span class="dot-indicator" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Get in Touch</p>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="contact-intro">
+                    Looking for a Data Analyst? I'd love to hear about your opportunities!
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="mailto:pawarayush498@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>pawarayush498@gmail.com</p>
+                    </a>
+                    <a href="tel:+918103798011" class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 8103798011</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ayush-pawar-09aug" target="_blank" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </a>
+                    <a href="https://github.com/Ayushpawar09" target="_blank" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>View my code</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Ayush Pawar. Crafted with <i class="fas fa-heart"></i> and lots of ☕</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
